@@ -7,7 +7,6 @@ from PIL import Image
 app = Flask(__name__)
 CORS(app)
 
-# Load model H5 lu
 model = tf.keras.models.load_model('model_esam.h5')
 class_labels = ['anorganik', 'b3', 'organik']
 
